@@ -32,29 +32,37 @@
 \headcommand {\beamer@framepages {10}{10}}
 \headcommand {\slideentry {2}{1}{9}{11/11}{Weak Formulation}{1}}
 \headcommand {\beamer@framepages {11}{11}}
-\headcommand {\slideentry {2}{1}{10}{12/12}{Weak Formulation}{1}}
+\headcommand {\sectionentry {3}{Cmake}{12}{Cmake}{1}}
+\headcommand {\beamer@sectionpages {2}{11}}
+\headcommand {\beamer@subsectionpages {2}{11}}
+\headcommand {\slideentry {3}{0}{1}{12/12}{}{1}}
 \headcommand {\beamer@framepages {12}{12}}
-\headcommand {\slideentry {2}{1}{11}{13/13}{Weak Formulation}{1}}
+\headcommand {\slideentry {3}{0}{2}{13/13}{}{1}}
 \headcommand {\beamer@framepages {13}{13}}
-\headcommand {\slideentry {2}{1}{12}{14/14}{Weak Formulation}{1}}
+\headcommand {\slideentry {3}{0}{3}{14/14}{}{1}}
 \headcommand {\beamer@framepages {14}{14}}
-\headcommand {\sectionentry {3}{Cmake}{15}{Cmake}{1}}
-\headcommand {\beamer@sectionpages {2}{14}}
-\headcommand {\beamer@subsectionpages {2}{14}}
-\headcommand {\slideentry {3}{0}{1}{15/15}{}{1}}
+\headcommand {\slideentry {3}{0}{4}{15/15}{}{1}}
 \headcommand {\beamer@framepages {15}{15}}
-\headcommand {\slideentry {3}{0}{2}{16/16}{}{1}}
+\headcommand {\slideentry {3}{0}{5}{16/16}{}{1}}
 \headcommand {\beamer@framepages {16}{16}}
-\headcommand {\slideentry {3}{0}{3}{17/17}{}{1}}
+\headcommand {\slideentry {3}{0}{6}{17/17}{}{1}}
 \headcommand {\beamer@framepages {17}{17}}
-\headcommand {\slideentry {3}{0}{4}{18/18}{}{1}}
+\headcommand {\slideentry {3}{0}{7}{18/18}{}{1}}
 \headcommand {\beamer@framepages {18}{18}}
-\headcommand {\slideentry {3}{0}{5}{19/19}{}{1}}
+\headcommand {\slideentry {3}{0}{8}{19/19}{}{1}}
 \headcommand {\beamer@framepages {19}{19}}
-\headcommand {\slideentry {3}{0}{6}{20/20}{}{1}}
+\headcommand {\slideentry {3}{0}{9}{20/20}{}{1}}
 \headcommand {\beamer@framepages {20}{20}}
-\headcommand {\beamer@partpages {2}{20}}
-\headcommand {\beamer@subsectionpages {15}{20}}
-\headcommand {\beamer@sectionpages {15}{20}}
-\headcommand {\beamer@documentpages {20}}
-\headcommand {\def \inserttotalframenumber {19}}
+\headcommand {\slideentry {3}{0}{10}{21/21}{}{1}}
+\headcommand {\beamer@framepages {21}{21}}
+\headcommand {\slideentry {3}{0}{11}{22/22}{}{1}}
+\headcommand {\beamer@framepages {22}{22}}
+\headcommand {\slideentry {3}{0}{12}{23/23}{}{1}}
+\headcommand {\beamer@framepages {23}{23}}
+\headcommand {\slideentry {3}{0}{13}{24/24}{}{1}}
+\headcommand {\beamer@framepages {24}{24}}
+\headcommand {\beamer@partpages {2}{24}}
+\headcommand {\beamer@subsectionpages {12}{24}}
+\headcommand {\beamer@sectionpages {12}{24}}
+\headcommand {\beamer@documentpages {24}}
+\headcommand {\def \inserttotalframenumber {23}}

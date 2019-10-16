@@ -12,6 +12,8 @@
 
 %% General document %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{graphicx}
+\usepackage{verbatim}
+\newenvironment{metaverbatim}{\verbatim}{\endverbatim}
 \usepackage{tikz}
 \usetikzlibrary{decorations.fractals}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -55,6 +57,7 @@
 \usepackage{listings}
 \usepackage{fancyvrb}
 \usepackage{multicol}
+\usepackage{listings}
 % \usepackage{tabu}
 % \usepackage{animate}
 %\usepackage{capt-of}
@@ -140,7 +143,7 @@ Indian Institute of Science, Bangalore, India\\
 %  WCCM XII -- APCOM VI -- SEOUL 2016
 % \end{center}
 % \vspace{-5mm}
-  \titlepage
+ \titlepage
 \end{frame}
 \footnotesize
 
@@ -177,60 +180,8 @@ Indian Institute of Science, Bangalore, India\\
 %\begin{frame}[Content..]
   	
 %\end{frame}
-\begin{frame}{VS code}
-	\begin{itemize}
-	\item Developed by Microsoft for Windows, Linux and macOS.
-	\item Includes support for debugging, embedded Git control and GitHub, syntax highlighting, intelligent code completion, snippets, and code refactoring.
-	\item It is highly customizable, allowing users to change the theme, keyboard shortcuts, preferences, and install extensions that add additional functionality. \item It is free and open source and released under the permissive MIT License.
-	\end{itemize}
-	\end{frame}
-	
-\begin{frame}{Basic Layout}
-	\begin{enumerate}
-		\item Editor - The main area to edit your files. 
-		\item Side Bar - Contains different views like the Explorer to assist you while working on your project.
-		\item Status Bar - Information about the opened project and the files you edit.
-\item Activity Bar - Located on the far left-hand side, this lets you switch between views and gives you additional context-specific indicators, like the number of outgoing changes when Git is enabled.
-	\item Panels - You can display different panels below the editor region for output or debug information, errors and warnings, or an integrated terminal. Panel can also be moved to the right for more vertical space.
-\end{enumerate}
-\end{frame}
-\begin{frame}
-	\includegraphics[width = \textwidth, height = \textheight]{s1.png}
-\end{frame}
 
-\begin{frame}{Side by side editing}
-	\begin{enumerate}
-		\item Alt click on a file in the Explorer.
-		\item Ctrl+\ to split the active editor into two.
-		\item Open to the Side (Ctrl+Enter) from the Explorer context menu on a file.
-		\item Click the Split Editor button in the upper right of an editor.
-	\item 	Drag and drop a file to any side of the editor region.
-\item 		Ctrl+Enter (macOS: Cmd+Enter) in the Quick Open (Ctrl+P) file list.
-	\end{enumerate}
-\end{frame}  
-	%\includegraphics[width = \textwidth, height = \textheight]{s2.png}
-	% \begin{center}
-	% \Large
-	% \bf
-	%  WCCM XII -- APCOM VI -- SEOUL 2016
-	% \end{center}
-	% \vspace{-5mm}
-%	\titlepage
-
-\begin{frame}
-\includegraphics[width = \textwidth, height = \textheight]{s2.png}
-\end{frame}
-\begin{frame}{Language specific editor settings}
-Customize the editor by language:
-	\begin{itemize}
-		\item Run the global command Preferences: Configure Language Specific Settings (command id: workbench.action.configureLanguageBasedSettings) from the Command Palette (Ctrl+Shift+P) which opens the language picker. 
-		\item Selecting the required language, opens the Settings editor with the language entry where you can add applicable settings.
-	\end{itemize}
-
-	
-	
-\end{frame}
-\begin{frame}{Version Control System(Git)}
+\begin{frame}{Version Control System}
 	
 	It is a software that helps software developers to work together and maintain a complete history of their work.The functions of a VCS are as follows: 
 \begin{wrapfigure}{r}{0.25\textwidth}
@@ -247,6 +198,7 @@ Customize the editor by language:
 	\item Centralized version control system (CVCS).
 	\item Distributed/Decentralized version control system (DVCS).
 	\end{enumerate}
+	Git is a distributed version-control system for tracking changes in source code during software development.
 	%\includegraphics[width = 0.5\textwidth,height = 0.5\textheight]{s13.jpg}
 \end{frame}
 %\begin{frame}{Advantages of Git}
@@ -267,57 +219,108 @@ Customize the editor by language:
 	\end{itemize}
 	\end{itemize}
 \end{frame}
-\begin{frame}{Commands}
-	\begin{itemize}
-		\item Glossary
-		\item Branch
-		\item Checkout
-		\item Cherry-picking
-		\item Clone
-		\item Fetch
-		\item Fork
-		\item HEAD
-		\item Index
-		\item Master
-		\item Merge
-		\item Origin
-		\item Pull/Pull Request
-		\item Push
-		\item Remote
-		\item Repository
-		\item Stash
-		\end{itemize}
+\begin{frame}
+	\includegraphics[width = \textwidth,height = 0.7\textheight]{s11.png}
 \end{frame}
 
 \begin{frame}{The lifecycle of the status of your files}
 	\includegraphics[width = \textwidth,height = 0.5\textheight]{s9.png}
 \end{frame}
-\begin{frame}
-	\includegraphics[width = \textwidth,height = 0.7\textheight]{s11.png}
-\end{frame}
+
 %\begin{frame}{The lifecycle of the status of your files}
 %	\includegraphics[width = \textwidth,height = 0.7\textheight]{s10.png}
 %\end{frame}
 %\begin{frame}
 %	\includegraphics[width = \textwidth,height =0.8 \textheight]{s8.png}
 %\end{frame}
+%\begin{frame}{Commands}
+%	\begin{itemize}
+%		\item Glossary
+%		\item Branch
+%		\item Checkout
+%		\item Cherry-picking
+%		\item Clone
+%		\item Fetch
+%		\item Fork
+%		\item HEAD
+%		\item Index
+%		\item Master
+%		\item Merge
+%		\item Origin
+%		\item Pull/Pull Request
+%		\item Push
+%		\item Remote
+%		\item Repository
+%		\item Stash
+%	\end{itemize}
+%\end{frame}
+%\begin{frame}{Commands}
+%		\textbf{git fetch :}
+%		The git fetch command communicates with a remote repository and fetches down all the information that is in that
+%		repository that is not in your current one and stores it in your local database.\newline
+%		\textbf{git pull:}
+%		The git pull command is basically a combination of the git fetch and git merge commands, where Git will fetch
+%		from the remote you specify and then immediately try to merge it into the branch you?re on.\newline
+%		\textbf{git push:}
+%		The git push command is used to communicate with another repository, calculate what your local database has
+%		that the remote one does not, and then pushes the difference into the other repository.
+%		\end{frame}
 \begin{frame}{Commands}
-		\textbf{git fetch :}
-		The git fetch command communicates with a remote repository and fetches down all the information that is in that
-		repository that is not in your current one and stores it in your local database.\newline
-		\textbf{git pull:}
-		The git pull command is basically a combination of the git fetch and git merge commands, where Git will fetch
-		from the remote you specify and then immediately try to merge it into the branch you?re on.\newline
-		\textbf{git push:}
-		The git push command is used to communicate with another repository, calculate what your local database has
-		that the remote one does not, and then pushes the difference into the other repository.\end{frame}
-	
+\textbf{git init [repository name]		}	\newline	This command is used to start a new repository.	\newline	\newline
+\textbf{git clone [url]		}	\newline	This command is used to obtain a repository from an existing URL.\newline	\newline
+\textbf{ git add [file]}\newline
+This command adds a file to the staging area.\newline	\newline
+\textbf{git add *		}	\newline	This command adds one or more to the staging area.\newline\newline
+\textbf{git commit -m "[ Type in the commit message]"}	\newline	This command records or snapshots the file permanently in the version history.	\newline	\newline
+\textbf{git commit -a}	\newline
+This command commits any files you've added with the git add command and also commits any files you've changed since then.\newline \newline
+
+\end{frame}
+\begin{frame}{Commands}
+\textbf{git diff}	\newline	This command shows the file differences which are not yet staged.	\newline	\newline
+\textbf{git diff -staged}	\newline	This command shows the differences between the files in the staging area and the latest version present.	\newline	\newline
+\textbf{git diff [first branch] [second branch]		}	\newline	This command shows the differences between the two branches mentioned.	\newline	\newline
+\textbf{git reset}	\newline	This command unstages the file, but it preserves the file contents.	\newline	\newline
+\textbf{git reset [commit]		}	\newline	This command undoes all the commits after the specified commit and preserves the changes locally.	\newline	\newline
+\textbf{git reset -hard [commit]}	\newline	This command discards all history and goes back to the specified commit.	\newline	\newline
+
+\end{frame}
+\begin{frame}{Commands}
+\textbf{git status		}	\newline	This command lists all the files that have to be committed.	\newline	\newline
+\textbf{git rm [file]		}	\newline	This command deletes the file from your working directory and stages the deletion.	\newline	\newline
+\textbf{git log		}	\newline This command is used to list the version history for the current branch.
+\newline	\newline
+\textbf{git log -follow[file]}	\newline	This command lists version history for a file, including the renaming of files also.	\newline	\newline
+\textbf{git show [commit]		}	\newline	This command shows the metadata and content changes of the specified commit.	\newline	\newline
+	\end{frame}
+	\begin{frame}{Commands}
+		\textbf{ git tag [commitID]		}	\newline	This command is used to give tags to the specified commit.	\newline	\newline
+		\textbf{git branch		}	\newline	This command lists all the local branches in the current repository.	\newline	\newline
+		\textbf{git branch [branch name]}	\newline "This command creates a new branch."	\newline	\newline
+		\textbf{git branch -d [branch name]		}	\newline	This command deletes the feature branch.	\newline	\newline
+		\textbf{git checkout [branch name]		}	\newline	This command is used to switch from one branch to another.	\newline	\newline
+		\textbf{git checkout -b [branch name]		}	\newline	This command creates a new branch and also switches to it.	\newline	\newline
+		\textbf{git merge [branch name]		}	\newline	This command merges the specified branch?s history into the current branch.	\newline	\newline
+		
+	\end{frame}
+		\begin{frame}{Commands}
+		\textbf{git remote add [variable name] [Remote Server Link]		}	\newline	This command is used to connect your local repository to the remote server.	\newline	\newline
+		\textbf{git push [variable name] master		}	\newline	This command sends the committed changes of master branch to your remote repository.	\newline	\newline	
+		\textbf{ git push [variable name] [branch]		}	\newline	This command sends the branch commits to your remote repository.	\newline	\newline
+		\textbf{git push -all [variable name]}	\newline	This command pushes all branches to your remote repository.	\newline	\newline
+		\textbf{git push [variable name] :[branch name]		}	\newline	This command deletes a branch on your remote repository.
+			\newline	\newline
+		\textbf{git pull [Repository Link]		}	\newline	This command fetches and merges changes on the remote server to your working directory.	\newline	\newline
+	\end{frame}
+%\end{frame}	
 \section{Cmake}
-\begin{frame}{Build-System Generator}
+\begin{frame}{Cmake}
 	\begin{itemize}
-		\item Provides single-sourcing for build systems
-		\item Knowledge of many platforms and tools
-		\item Users configure builds through a GUI
+		\item It is an extensible, open-source system that manages the build process in an operating system and in a compiler-independent manner. 
+		\item It can generate a native build environment that will compile source code, create libraries, generate wrappers and build executables in arbitrary combinations
+		\item Users can configure builds through a GUI
+		\item It supports static and dynamic library builds. 
+		\item It helps to manage and build your source codes effectively
 	\end{itemize}
 	\end{frame}
 \begin{frame}{	Source and Build Trees		}
@@ -341,7 +344,13 @@ Customize the editor by language:
 \end{frame}	
 \begin{frame}
 	\includegraphics[width = 0.7\textwidth,height = 0.7\textheight]{s13.png}
-\end{frame}			
+\end{frame}
+\begin{frame}{Installation}
+	\includegraphics[width = 0.7\textwidth,height = 0.4\textheight]{s14.png}
+%	\text{cmake_minimum_required (VERSION 2.6)}
+%\text{project (Tutorial)}
+%\text{add_executable(Tutorial tutorial.cxx)}
+	\end{frame}			
 \begin{frame}{The CMake Cache}
 \begin{itemize}
 \item Represents build configuration
@@ -365,6 +374,59 @@ Customize the editor by language:
 		\item Select the architecture type
 		\item Select the parallel type
 		\item Select the Operating system
+		\item Link static and dynamic libraries
 	\end{itemize}
 \end{frame}
+\begin{frame}{VS code}
+	\begin{itemize}
+		\item Developed by Microsoft for Windows, Linux and macOS.
+		\item Includes support for debugging, embedded Git control and GitHub, syntax highlighting, intelligent code completion, snippets, and code refactoring.
+		\item It is highly customizable, allowing users to change the theme, keyboard shortcuts, preferences, and install extensions that add additional functionality. \item It is free and open source and released under the permissive MIT License.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Basic Layout}
+	\begin{enumerate}
+		\item Editor - The main area to edit your files. 
+		\item Side Bar - Contains different views like the Explorer to assist you while working on your project.
+		\item Status Bar - Information about the opened project and the files you edit.
+		\item Activity Bar - Located on the far left-hand side, this lets you switch between views and gives you additional context-specific indicators, like the number of outgoing changes when Git is enabled.
+		\item Panels - You can display different panels below the editor region for output or debug information, errors and warnings, or an integrated terminal. Panel can also be moved to the right for more vertical space.
+	\end{enumerate}
+\end{frame}
+\begin{frame}
+	\includegraphics[width = \textwidth, height = \textheight]{s1.png}
+\end{frame}
+
+\begin{frame}{Side by side editing}
+	\begin{enumerate}
+		\item Alt click on a file in the Explorer.
+		\item Ctrl+\ to split the active editor into two.
+		\item Open to the Side (Ctrl+Enter) from the Explorer context menu on a file.
+		\item Click the Split Editor button in the upper right of an editor.
+		\item 	Drag and drop a file to any side of the editor region.
+		\item 		Ctrl+Enter (macOS: Cmd+Enter) in the Quick Open (Ctrl+P) file list.
+	\end{enumerate}
+\end{frame}  
+%\includegraphics[width = \textwidth, height = \textheight]{s2.png}
+% \begin{center}
+% \Large
+% \bf
+%  WCCM XII -- APCOM VI -- SEOUL 2016
+% \end{center}
+% \vspace{-5mm}
+%	\titlepage
+
+\begin{frame}
+	\includegraphics[width = \textwidth, height = \textheight]{s2.png}
+\end{frame}
+\begin{frame}{Language specific editor settings}
+	Customize the editor by language:
+	\begin{itemize}
+		\item Run the global command Preferences: Configure Language Specific Settings (command id: workbench.action.configureLanguageBasedSettings) from the Command Palette (Ctrl+Shift+P) which opens the language picker. 
+		\item Selecting the required language, opens the Settings editor with the language entry where you can add applicable settings.
+	\end{itemize}
+\end{frame}
+
+%\end{metaverbatim}
 \end{document}
